@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+    implementation 'info.cukes:cucumber-core:1.2.6'
+
+    testImplementation 'junit:junit:4.+'
+    testImplementation 'io.rest-assured:rest-assured:3.0.0'
+    testImplementation 'info.cukes:cucumber-junit:1.2.6'
+    testImplementation 'info.cukes:cucumber-java:1.2.6'
+
+}
+
+application {
+    mainClassName = 'cucumber.rest.App'
+}
